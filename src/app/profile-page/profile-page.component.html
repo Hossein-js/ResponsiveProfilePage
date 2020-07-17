@@ -1,0 +1,29 @@
+<div class="main-cont">
+    <div class="box-cont column">
+        <div class="user-info row">
+            <img class="user-pic-425" src="../../assets/profile-pic.png">
+            <span class="column">
+                <h1>{{user?.name}}</h1>
+                <h3>{{user?.company}}</h3>
+            </span>
+        </div>
+        <div class="user-description row">
+            <span class="description column">
+                <img  src="../../assets/left-quote.png">
+                <blockquote>{{user?.description}}</blockquote>
+            </span>
+            <span class="user-contact column">
+                <p>Tel : {{user?.tel}}</p>
+                <span>
+                    <p>Address:</p>
+                    <address>{{user?.address}}</address>
+                </span>
+            </span>
+        </div>
+        <div class="action-cont">
+            <button class="edit-profile">
+                Edit Profile
+            </button>
+        </div>
+    </div>
+</div>

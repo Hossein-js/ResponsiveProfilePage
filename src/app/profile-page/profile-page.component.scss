@@ -1,0 +1,157 @@
+.main-cont {
+    background-color: #f2f2f2;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box-cont {
+        background: white;
+        width: 60vw;
+        height: 50vh;
+        border-radius: 25px;
+        justify-content: space-between;
+        .user-info {
+            padding: 0px 40px;
+            position: relative;
+            height: 10vh;
+            img{
+                width: 120px;
+                position: absolute;
+                top: -60px;
+                border-radius: 50%;
+            }
+            span{
+                margin-left: 130px;
+                margin-top: 20px;
+                h1{
+                    margin: 0;
+                    color: black;
+                }
+                :last-child{
+                    margin: 0;
+                    margin-top: 10px;
+                    color: #7d7d7d;
+                }
+            }
+        }
+        .user-description{
+            height: 75vh;
+            align-items: center;
+            width: calc(60vw - 40px);
+            padding: 0px 20px;
+            .description {
+                width: 60vw;
+                img{
+                    width: 60px;
+                }
+                blockquote {
+                    all:unset;
+                    font-size: 2.1rem;
+                    margin: 12px 0px;
+                    margin-right: 60px;
+                }
+            }
+            .user-contact{
+                width: 30vw;
+                height: 30vh;
+                justify-content: center;
+                font-size: 1.3rem;
+                padding-left: 10px;
+                p {
+                    margin: 10px 0px;
+                    color: #919191;
+                }
+                address {
+                    all:unset;
+                    color: #919191;
+
+                }
+                border-left : solid 0.7px #919191;
+            }
+        }
+        .action-cont{
+            height: 10vh;
+            button {
+                all: unset;
+                width: 60vw;
+                height: 5vh;
+                background: #3f856a;
+                color: white;
+                border-radius: 0px 0px 10px 10px;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 425px) {
+    .main-cont {
+        .box-cont{
+            width: 80vw;
+            height: 70vh;
+            .user-info{
+                height: 20vh;
+                order: 1;
+                .user-pic-425 {
+                    right: calc(50% - 45px);
+                    width: 90px;
+                    top: -50px;
+                }
+                span {
+                    margin: 0;
+                    margin-top: 50px;
+                    width: 100vw;
+                    text-align: center;
+                }
+            }
+            .user-description{
+                order: 3;
+                flex-flow: column;
+                height: 50vh;
+                width: 70vw;
+                justify-content: flex-end;
+                .description {
+                    flex-flow: row;
+                    width: 70vw;
+                    align-items: flex-start;
+                    margin-bottom: 8vh;
+                    img {
+                        width: 20px;
+                    }
+                    blockquote{
+                        font-size: 1.3rem;
+                        line-height: 30px;
+                        margin: 0px 20px;
+                    }
+                }
+                .user-contact{
+                    width: 70vw;
+                    flex-flow: column;
+                    justify-content: center;
+                    font-size: 1rem;
+                    border-left: 0px;
+                    border-top: solid 0.7px #919191;
+                    justify-content: space-evenly;
+                    height: 20vh;
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+            .action-cont {
+                order: 2;
+                height: 5vh;
+                text-align: center;
+                button {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .user-pic-425 {
+            right: calc(50% - 40px);
+            width: 80px;
+            top: -50px;
+        }
+    }
+  }
